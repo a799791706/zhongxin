@@ -1,0 +1,41 @@
+.tab > li > a {
+  color: #666666 !important; }
+.tab > li:nth-child(5) > a {
+  color: #e34a4a !important; }
+.tab > li:nth-child(5) > span {
+  z-index: 100;
+  background: url(../../images/arrow_down2.png) top center no-repeat; }
+
+.partners {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 40px 0 100px; }
+  .partners > ul > li {
+    margin-top: 20px;
+    padding: 0 25px; }
+    .partners > ul > li > div:nth-child(1) {
+      text-align: center;
+      background-image: url(../../images/bg_line2.jpg);
+      background-position: 19px center;
+      background-repeat: repeat-x;
+      margin: 0 60px;
+      margin-bottom: 40px; }
+      .partners > ul > li > div:nth-child(1) > strong {
+        font-size: 18px;
+        font-weight: normal;
+        display: inline-block;
+        background-color: #f8f8f8;
+        padding: 0 24px; }
+    .partners > ul > li > ul:nth-child(3) > li > p {
+      font-size: 14px;
+      color: #666;
+      font-weight: normal;
+      line-height: 28px; }
+    .partners > ul > li > ul:nth-child(3) > li > div:nth-child(2) {
+      padding-left: 2em;
+      color: #666;
+      line-height: 24px; }
+
+/*# sourceMappingURL=partners.css.map */

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../sass/css/imzhongxin.css"/>
+	</head>
+	<body>
+		<!--关于众信-->
+		<div class="imzhongxin">
+			<div ng-repeat="item in header">
+				<div>
+					<strong>{{item.label}}</strong><span>{{item.content}}</span>
+				</div>
+				<img _src="{{item.image}}" alt="" />
+			</div>
+			<ul>
+				<li ng-repeat="item in images">
+					<a href="javascript:;"><img _src="{{item.image}}" alt="" /></a>
+					<di>{{item.title}}</p>
+				</li>
+			</ul>
+			<div>
+				<div>
+					<span>
+						安全运行<span>1128天12时45分50秒</span><span>,100%投资人按时收回本息，0逾期</span>
+					</span>
+					<a href="javascript:;">更多数据</a>
+				</div>
+				<div>
+					<div ng-repeat="item in money">
+						<p>{{item.money}}</p>
+						<p>{{item.title}}</p>
+					</div>
+				</div>
+				<a href="javascript:;">众信金融2017年6月月报</a>
+			</div>
+			<div>
+				<div><strong>媒体报道</strong></div>
+				<div>
+					<div ng-repeat="item in compile">
+						<div>
+							<img _src="{{item.image}}" alt="" />
+						</div>
+						<div>
+							<div></div>
+							<img _src="{{item.images}}" alt="" />
+							<div>
+								<div><strong>{{item.titles}}</strong><span>{{item.title}}</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div><strong>合作伙伴</strong></div>
+				<div>
+					<img ng-repeat="item in firend" _src="{{item.image}}" alt="" />
+				</div>
+			</div>
+			<div>
+				<div><strong>合作伙伴</strong></div>
+				<ul>
+					<li ng-repeat="item in lik">
+						<img _src="{{item.image}}" alt="" />
+						<strong>{{item.title}}</strong>
+						<p>{{item.titles}}</p>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div><strong>联系我们</strong></div>
+				<ul>
+					<li ng-repeat="item in phone">
+						<div></div>
+						<span>{{item.title}}</span>
+						<p>{{item.title2}}</p>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:;">加入众信</a>
+		</div>
+	</body>
+</html>

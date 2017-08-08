@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../sass/css/tab2.css" />
+		<script src="../js/tab2.js"></script>
+	</head>
+	<body>
+		<div ng-controller="tab2" class="tab2">
+			<div>
+				<ul class="tab">
+					<li class="">
+						<a href="javascript:;" ui-sref=".investment">投资专区</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="javascript:;" ui-sref=".transfer">二级市场</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="javascript:;" ui-sref=".coupon">体验专区</a>
+						<span></span>
+					</li>
+				</ul>
+			</div>
+			<div ui-view></div>
+		</div>
+	</body>
+</html>

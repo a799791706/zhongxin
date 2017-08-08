@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../sass/css/zhongxin.css"/>
+		<script type="text/javascript" src="../js/libs/echarts/echarts.js"></script>
+		<script type="text/javascript" src="../js/libs/echarts/chart/china.js"></script>
+		<script src="../js/libs/echarts/chart/bar.js"></script>
+		<script src="../js/libs/echarts/chart/line.js"></script>
+		<script src="../js/libs/echarts/chart/map.js"></script>
+		<script src="../js/libs/echarts/chart/pie.js"></script>
+		<script type="text/javascript" src="../js/zhongxin.js"></script>
+	</head>
+	<body>
+		<div ng-controllar="zhongxin" class="zhongxin">
+			<div>
+				<ul>
+					<li ng-repeat="item in zhongxin">
+						<strong>{{item.money}}</strong>
+						<p>{{item.content}}</p>
+					</li>
+				</ul>
+				<!---->
+				<div>
+					<p><strong>众信成长之路</strong><span>众信的每一步，都有您的参与</span></p>
+					<div id="mMainWebsiteChar"></div>
+				</div>
+				<!---->
+				<div>
+					<p><strong>众信的小伙伴都来自哪儿？</strong></p>
+					<div id="mMainWebsiteChar2"></div>
+					<p><span>穹顶之下，不能只有柴静，需要五湖四海的大家的努力！</span></p>
+				</div>
+				<!---->
+				<div>
+					<div>
+						<p><strong>大家的资金都帮助了那些地区的企业？</strong></p>
+						<div id="mMainWebsiteChar3"></div>
+						<p>黑龙江地区的企业得到了大家的最多的支持，蓝天离我们不再久远。</p>
+					</div>
+					<div>
+						<p><strong>大家都在众信都投了几次？</strong></p>
+						<div id="mMainWebsiteChar4"></div>
+						<p>由此看来，土豪还是很多滴！</p>
+					</div>
+				</div>
+				<!---->
+				<div>
+					<div>
+						<p><strong>男女大不同，看看您在哪？</strong></p>
+						<div class="mSexChart">
+							<ul>
+								<li ng-repeat="item in lisat">{{item.sex}}</li>
+							</ul>
+							<div>
+								<div><span></span><span>女生</span><span>47.22%</span></div>
+								<div><span></span><span>男生</span><span>52.78%</span></div>
+							</div>
+						</div>
+						<p>女士们加油！</p>
+					</div>
+					<div>
+						<p><strong>保持理财习惯，终身收益？</strong></p>
+						<div id="mMainWebsiteChar5"></div>
+						<p>而立之年，来众信经营你的财富吧！</p>
+					</div>
+				</div>
+				<!---->
+				<div>
+					<p>最新数据更新于2017年07月23日 00:00:00</p>
+					<div>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</div>
+					<a href="javascript:;">加入众信</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

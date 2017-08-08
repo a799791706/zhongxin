@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../sass/css/tab3.css"/>
+		<script src="../js/tab3.js"></script>
+	</head>
+	<body>
+		<div ng-controller="tab2" class="tab3">
+			<div></div>
+			<!---->
+			<div>
+				<div>
+					<div>
+						<strong>什么是众信金融</strong>
+					</div>
+					<div>
+						<ul>
+							<li ng-repeat="item in intro">
+								<p>{{item.list}}</p>
+							</li>
+						</ul>
+						<img _src="../images/about_file.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<!---->
+			<div>
+				<div>
+					<strong>为什么选择众信金融</strong>
+				</div>
+				<ul>
+					<li ng-repeat="item in ys">
+						<div>
+							<img _src="{{item.image}}" alt="" />
+						</div>
+						<strong>{{item.title}}</strong>
+						<p>{{item.content}}</p>
+					</li>
+				</ul>
+			</div>
+			<!---->
+			<div>
+				<div>
+					<div>
+						<strong>众信金融的产品</strong>
+					</div>
+					<ul>
+						<li ng-repeat="item in extra">
+							<div>
+								<h3>{{item.title}}</h3>
+								<p>{{item.content}}</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!---->
+			<div>
+				<div>
+					<div>
+						<strong>众信投资专区</strong>
+					</div>
+					<img _src="../images/extra_img4.gif" alt="" />
+				</div>
+			</div>
+			<!---->
+			<div>
+				<div>
+					<div>
+						<strong>众信二级市场</strong>
+					</div>
+					<img _src="../images/extra_img5.gif" alt="" />
+				</div>
+			</div>
+			<!---->
+			<div>
+				<div>
+					<div>
+						<strong>如何投资</strong>
+					</div>
+					<div class="swiper-container friter-t">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" ng-repeat="item in slider">
+								<img _src="{{item.image}}" alt="" />
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			<div>
+				<a href="javascript:;">加入众信</a>
+			</div>
+		</div>
+	</body>
+</html>

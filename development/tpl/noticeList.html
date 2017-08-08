@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../sass/css/noticeList.css" />
+	</head>
+	<body>
+		<!--公告-->
+		<div class="noticeList"> 
+			<div><strong>公告</strong></div>
+			<div>
+				<ul>
+					<li ng-repeat="item in noticeList">
+						<div><span></span><span>{{item.content}}</span><img _src="../images/icon_hot.png" alt="" /><span>{{item.time}}</span></div>
+					</li>
+				</ul>
+				<ul>
+					<li><a href="javascript:;">第一页</a></li>
+					<li><a href="javascript:;"><</a></li>
+					<li><a href="javascript:;">1</a></li>
+					<li><a href="javascript:;">2</a></li>
+					<li><a href="javascript:;">3</a></li>
+					<li><a href="javascript:;">4</a></li>
+					<li><a href="javascript:;">5</a></li>
+					<li><a href="javascript:;">></a></li>
+					<li><a href="javascript:;">最末页</a></li>
+				</ul>
+			</div>
+		</div>
+</body>
+</html>

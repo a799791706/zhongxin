@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../sass/css/tab7.css" />
+		<script src="../js/tab7.js"></script>
+	</head>
+	<body>
+		<div ng-controller="tab7" class="tab7">
+			<div>
+				<div class="swiper-container swiper1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" ng-repeat="item in index">
+							<img _src="{{item.image}}" alt="" />
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				
+				<!---->
+				<div>
+					<div>
+						<a href="javascript:;">免费注册</a>
+					</div>
+					<form action="" method="post">
+						<div>
+							<label for="账号"></label>
+							<input type="text" placeholder="请输入手机号"/>
+						</div>
+						<div>
+							<label for="密码"></label>
+							<input type="text" placeholder="请输入密码"/>
+							<a href="javascript:;">忘记密码？</a>
+						</div>
+						<div>
+							<div>
+								<label for="验证码"></label>
+								<input type="text" placeholder="请输入验证码"/>
+							</div>
+							<div><img _src="../images/yzm.png" alt="" /></div>
+						</div>
+						<input type="submit" value="登录"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

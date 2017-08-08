@@ -1,0 +1,55 @@
+.tab{
+    >li{
+        >a{
+            color:#666666 !important;
+        }
+    }
+    >li:nth-child(3){
+        >a{
+            color: #e34a4a !important;
+        }
+        >span{
+            background: url(../../images/arrow_down2.png) top center no-repeat;
+        }
+    }
+}
+.manageteam{
+    width:980px;
+    margin:0 auto;
+    >ul:nth-child(1){
+        >li{
+            border-bottom: 1px solid #ccc;
+            overflow: hidden;
+            padding: 24px;
+            >div:nth-child(1){
+                width: 200px;
+                height: 226px;
+                display: block;
+                float:left;
+            }
+            >div:nth-child(2){
+                width:682px;
+                float:right;
+                >p:nth-child(1){
+                    >strong{
+                        font-size:30px;
+                        font-weight: normal;
+                    }
+                    span{
+                        font-size:20px;
+                        margin-left:16px;
+                    }
+                }
+                >ul:nth-child(2){
+                    font-size:14px;
+                    line-height:24px;
+                    margin-top:12px;
+                    >li{
+                        padding-left:20px;
+                        background: url(../../images/about_team_dot.png) 0 8px no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.tab{
+    >li{
+        >a{
+            color:#666666 !important;
+        }
+    }
+    >li:nth-child(2){
+        >a{
+            color: #e34a4a !important;
+        }
+        >span{ 
+            background: url(../../images/arrow_down2.png) top center no-repeat;
+        }
+    }
+}
+.odata{
+    background-color: #fff;
+    padding: 20px 0 80px;
+    color:#666666;
+    >div{
+        width:980px;
+        margin:0 auto;
+        overflow:hidden;
+        >p:nth-child(1){
+            font-size:18px;
+            height:40px;
+            line-height:40px;
+            padding-left:20px;
+        }
+        >ul:nth-child(2){
+            overflow:hidden;
+            margin:10px -10px 0;
+            >li{
+                width:478px;
+                border:1px solid #DCDCDC;
+                float:left;
+                margin:0 10px 20px;
+                >div:nth-child(1){
+                    overflow:hidden;
+                    >img{
+                        width:478px;
+                        height:168px;
+                        display:block;
+                    }
+                }
+                >div:nth-child(2){
+                    height:42px;
+                    padding:0 10px 0 20px;
+                    >span:nth-child(1){
+                        float:left;
+                        line-height:42px;
+                    }
+                    >a:nth-child(2){
+                        width:56px;
+                        height:22px;
+                        color:#ffffff;
+                        line-height:22px;
+                        text-align:center;
+                        display:inline-block;
+                        background:#E34A4A;
+                        border-radius: 4px;
+                        margin-top:10px;
+                        float:right;
+                    }
+                }
+            }
+        }
+        >ul:nth-child(3){
+            text-align:center;
+            margin-top:20px;
+            overflow:hidden;
+            >li{
+                display:inline-block;
+                >a{
+                    height:24px;
+                    font-size:14px;
+                    line-height:24px;
+                    text-align:center;
+                    display:inline-block;
+                    padding:4px 12px;
+                    margin:0 2px;
+                    border-radius: 4px;
+                    background-color: #e0e0e0;
+                    color:#333333;
+                }
+                >a:hover{
+                    background-color: #e34a4a;
+                    color:#ffffff;
+                }
+            }
+        }
+    }
+}

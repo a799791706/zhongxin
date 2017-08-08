@@ -1,0 +1,274 @@
+let app=angular.module('atr',['ui.router']);
+app.config(function($stateProvider,$urlRouterProvider){
+	$urlRouterProvider
+	.when('','homepage')
+	$stateProvider.state('homepage',{	
+		url:'/homepage',
+		templateUrl:'homepage.html',
+		controller:function($state){
+			 $state.go('homepage.tab1');
+		}
+	}).state('homepage.tab1',{
+		url:'/tab1',
+		templateUrl:'tab1.html',
+		controller:'tab1'
+	}).state('homepage.tab2',{
+		url:'/tab2',
+		templateUrl:'tab2.html',
+		controller:function($state){
+			 $state.go('homepage.tab2.investment');
+		}
+	}).state('homepage.tab2.investment',{
+		url:'/investment',
+		templateUrl:'investment.html',
+		controller:'investment'
+	}).state('homepage.tab2.transfer',{
+		url:'/transfer',
+		templateUrl:'transfer.html',
+		controller:'transfer'
+	}).state('homepage.tab2.coupon',{
+		url:'/coupon',
+		templateUrl:'coupon.html',
+		controller:'coupon'
+	}).state('homepage.tab3',{
+		url:'/tab3',
+		templateUrl:'tab3.html',
+		controller:'tab3'
+	}).state('homepage.tab4',{
+		url:'/tab4',
+		templateUrl:'tab4.html',
+		controller:function($state){
+			 $state.go('homepage.tab4.imzhongxin');
+		}
+	}).state('homepage.tab4.imzhongxin',{
+		url:'/imzhongxin',
+		templateUrl:'imzhongxin.html',
+		controller:'imzhongxin'
+	}).state('homepage.tab4.stockright',{
+		url:'/stockright',
+		templateUrl:'stockright.html',
+		controller:'stockright'
+	}).state('homepage.tab4.manageteam',{
+		url:'/manageteam',
+		templateUrl:'manageteam.html',
+		controller:'manageteam'
+	}).state('homepage.tab4.honor',{
+		url:'/honor',
+		templateUrl:'honor.html',
+		controller:'honor'
+	}).state('homepage.tab4.partners',{
+		url:'/partners',
+		templateUrl:'partners.html',
+		controller:'partners'
+	}).state('homepage.tab4.newsList',{
+		url:'/newsList',
+		templateUrl:'newsList.html',
+		controller:'newsList'
+	}).state('homepage.tab4.noticeList',{
+		url:'/noticeList',
+		templateUrl:'noticeList.html',
+		controller:'noticeList'
+	}).state('homepage.tab5',{
+		url:'/tab5',
+		templateUrl:'tab5.html',
+		controller:function($state){
+			 $state.go('homepage.tab5.zhongxin')
+		}
+	}).state('homepage.tab5.zhongxin',{
+		url:'/zhongxin',
+		templateUrl:'zhongxin.html',
+		controller:'zhongxin'
+	}).state('homepage.tab5.odata',{
+		url:'/odata',
+		templateUrl:'odata.html',
+		controller:'odata'
+	}).state('homepage.tab5.investmentList',{
+		url:'/investmentList',
+		templateUrl:'investmentList.html',
+		controller:'investmentList'
+	}).state('homepage.tab6',{
+		url:'/tab6',
+		templateUrl:'tab6.html',
+		controller:'tab6'
+	}).state('homepage.tab7',{
+		url:'/tab7',
+		templateUrl:'tab7.html',
+		controller:'tab7'
+	})
+});
+app.controller('tab1',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.banner=data.homepage;
+		$scope.not=data.notice;
+		$scope.stat=data.statistics;
+		$scope.baz=data.bazaar;
+		$scope.find=data.find;
+		$scope.friends=data.friends;
+		$scope.medias=data.media;
+		$scope.sponsor=data.sponsor;
+		$scope.invest=data.invest;
+	});
+	$timeout(function(){
+		new Swiper('.friter-one',{
+			loop: true, 
+			autoplay: 5000,
+			observer:true,
+			observeParents:true,
+			prevButton:'.friter-one>.swiper-button-prev',
+			nextButton:'.friter-one>.swiper-button-next',
+		});
+		
+	},1000/60);
+	$scope.date=new Date().getTime();
+	$scope.now="投标中";
+})
+//tab2
+app.controller('tab2',function($scope,$http){ 
+	$http.get('../json/start.json').success(function(data){
+	});
+})
+app.controller('investment',function($scope,$http){
+	$http.get('../json/start.json').success(function(data){
+		$scope.limit=data.limit;
+		$scope.invest=data.invest;
+		$scope.inlist=data.inlist;
+		$scope.tfirter=data.tfirter;
+		$scope.where=data.where;
+		$scope.balist=data.balist;
+	});
+	$scope.now="投标中";
+})
+app.controller('transfer',function($scope,$http){
+	$http.get('../json/start.json').success(function(data){
+		$scope.limit=data.limit;
+		$scope.invest=data.invest;
+		$scope.inlist=data.inlist;
+		$scope.tfirter=data.tfirter;
+		$scope.where=data.where;
+		$scope.balist=data.balist;
+	});
+	$scope.now="投标中";
+})
+app.controller('coupon',function($scope,$http){
+	$http.get('../json/start.json').success(function(data){
+		$scope.limit=data.limit;
+		$scope.invest=data.invest;
+		$scope.inlist=data.inlist;
+		$scope.tfirter=data.tfirter;
+		$scope.where=data.where;
+		$scope.balist=data.balist;
+	});
+	$scope.now="投标中";
+})
+//tab3
+app.controller('tab3',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.intro=data.intro;
+		$scope.ys=data.ys;
+		$scope.extra=data.extra;
+		$scope.slider=data.slider;
+	});
+	$timeout(function(){
+		new Swiper('.friter-t',{
+			loop: true, 
+			autoplay: 5000,
+			observer:true,
+			observeParents:true,
+			prevButton:'.friter-t>.swiper-button-prev',
+			nextButton:'.friter-t>.swiper-button-next',
+			pagination:'.friter-t>.swiper-pagination'
+		});
+		//
+		var oSpan=$('.swiper-pagination').children('span');
+		var arr=['注册','充值','投资'];
+		oSpan.each(function(i){
+			oSpan.eq(i).append($('<span></span>').text(arr[i]));
+			oSpan.eq(i).append($('<div></div>'));
+			oSpan.eq(i).append($('<span></span>').text(i));
+		});
+	},1000);
+})
+app.controller('tab4',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+	});
+})
+app.controller('imzhongxin',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.header=data.imzhongxin[0];
+		$scope.images=data.imzhongxin[1].images;
+		$scope.money=data.imzhongxin[2].money;
+		$scope.compile=data.imzhongxin[3].compile;
+		$scope.firend=data.imzhongxin[4].firend;
+		$scope.lik=data.imzhongxin[5].lik;
+		$scope.phone=data.imzhongxin[6].phone;
+	})
+})
+app.controller('stockright',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+	})
+})
+app.controller('stockright',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+	})
+})
+app.controller('manageteam',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.manageteam=data.manageteam;
+		$scope.list=data.manageteam[1].list;
+	})
+})
+app.controller('honor',function($scope,$http,$timeout){
+$http.get('../json/start.json').success(function(data){
+		$scope.honor=data.honor;
+		$scope.honors=data.honors;
+	})
+})
+app.controller('partners',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+	})
+})
+app.controller('newsList',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.newsList=data.newsList;
+		$scope.timer=data.timer;
+		$scope.buer=data.buer;
+	})
+})
+app.controller('noticeList',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.noticeList=data.noticeList;
+	})
+})
+app.controller('tab5',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+	})
+})
+app.controller('zhongxin',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.zhongxin=data.zhongxin;
+		$scope.lisat=data.lisat;
+	})
+})
+app.controller('odata',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.odata=data.odata;
+	})
+})
+app.controller('investmentList',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.invest=data.invests;
+		$scope.investone=data.investone;
+		$scope.investtwo=data.investtwo;
+	})
+})
+app.controller('tab6',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.fCf=data.fCf;
+		$scope.mLoan=data.mLoan;
+	})
+})
+app.controller('tab7',function($scope,$http,$timeout){
+	$http.get('../json/start.json').success(function(data){
+		$scope.index=data.index;
+	})
+})

@@ -1,0 +1,95 @@
+.tab{
+    >li{
+        >a{
+            color:#666666 !important;
+        }
+    }
+    >li:nth-child(4){
+        >a{
+            color: #e34a4a !important;
+        }
+        >span{
+            background: url(../../images/arrow_down2.png) top center no-repeat;
+        }
+    }
+}
+.honor{
+    background: #fafafa;
+    padding:40px 0;
+    >div:nth-child(1){
+        width:980px;
+        margin:0 auto;
+        padding:40px 0;
+        background-image: url(../../images/about_honor_line.png);
+        background-position:top center;
+        background-repeat: repeat-y;
+        overflow:hidden;
+        >ul{
+            >li{
+                padding: 5px 10px 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom:84px;
+                position:relative;
+                >div:nth-child(1){
+                    width:40px;
+                    height:40px;
+                    background-image: url(../../images/about_honor_icon.png);
+                    position:absolute;
+                    right:-65px;
+                    top:0;
+                }
+                >div:nth-child(2){
+                    width:18px;
+                    height:18px;
+                    background-image: url(../../images/about_honor_arrow01.png);
+                    position:absolute;
+                    right:-18px;
+                    top:18px;
+                }
+                >div:nth-child(3){
+                    >p:nth-child(1){
+                        >strong{
+                            font-size:24px;
+                            color:#E34A4A;
+                            font-weight: normal;
+                        }
+                        >span{
+                            font-size: 14px;
+                            color: #999;
+                            margin-left: 16px;
+                        }
+                    }
+                    >p:nth-child(2){
+                        font-size:18px;
+                        height:27px;
+                        line-height:27px;
+                        margin-bottom:4px;
+                    }
+                    >div:nth-child(3){
+                        text-align:center;
+                    }
+                }
+            }
+        }
+        >ul:nth-child(1){
+            float:left;
+            margin-left:30px;
+        }
+        >ul:nth-child(2){
+            float:right;
+            padding-top:180px;
+            >li{
+                >div:nth-child(1){
+                    left:-94px;
+                    top:0;
+                }
+                >div:nth-child(2){
+                    background-image: url(../../images/about_honor_arrow02.png);
+                    left:-18px;
+                    top:18px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../sass/css/transfer.css" />
+	</head>
+	<body>
+		<!--二级市场-->
+		<div class="transfer">
+			<div>
+				<div>
+					<div>
+						<label for="">项目类型</label>
+							<ul>
+								<li><a href="javascript:;" class="zActive">全部</a></li>
+								<li><a href="javascript:;">我要转让</a></li>
+								<li><a href="javascript:;">我要购买</a></li>
+							</ul>
+					</div>
+					<div>
+						<label for="">年化收益</label>
+						<ul>
+							<li><a href="javascript:;" class="zActive">全部</a></li>
+							<li><a href="javascript:;">8-10%</a></li>
+							<li><a href="javascript:;">10-12%</a></li>
+							<li><a href="javascript:;">12%以上</a></li>
+						</ul>
+					</div>
+					<div>
+						<label for="">项目期限</label>
+						<ul>
+							<li><a href="javascript:;" class="zActive">全部</a></li>
+							<li><a href="javascript:;">0-3个月</a></li>
+							<li><a href="javascript:;">3-6个月</a></li>
+							<li><a href="javascript:;">6-12个月</a></li>
+							<li><a href="javascript:;">12个月以上</a></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div>累计投资额<span>{{limit}}</span>元</div>
+				</div>
+				<div>
+					<div>
+						<span>项目名称</span>
+						<span>剩余天数<img _src="../images/arr2019.png" alt="" /></span>
+						<span>最高<span>出价</span>/最低<span>标价</span></span>
+						<span>最优价份额</span>
+						<span></span>
+					</div>
+					<ul>
+						<li ng-repeat="bazs in balist">
+							<div>
+								<a href="javascript:;">{{bazs.name}}</a>
+								<p><span>原标年化收益</span><span>{{bazs.rate}}</span></p>
+							</div>
+							<div><span>剩余</span><span>{{bazs.data}}</span><span>天</span></div>
+							<div><span>{{bazs.rate}}</span><span>%</span></div>
+							<div>
+								<div><span>{{bazs.number}}</span><span>份转让中</span></div>
+								<p><span>全部标价共</span><span>{{bazs.number}}</span><span>份</span></p>
+							</div>
+							<div>
+								<a href="javascript:;">立即购买</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+				    	<li><a href="javascript:;">第一页</a></li>
+				    	<li><a href="javascript:;"><</a></li>
+				    	<li><a href="javascript:;">1</a></li>
+				    	<li><a href="javascript:;">2</a></li>
+				    	<li><a href="javascript:;">3</a></li>
+				    	<li><a href="javascript:;">4</a></li>
+				    	<li><a href="javascript:;">5</a></li>
+				    	<li><a href="javascript:;">></a></li>
+				    	<li><a href="javascript:;">最末页</a></li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

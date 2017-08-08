@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../sass/css/odata.css"/>
+	</head>
+	<body>
+		<div ng-controller="odata" class="odata">
+			<div>
+				<p>运营报告</p>
+				<ul>
+					<li ng-repeat="item in odata">
+						<div>
+							<img _src="{{item.image}}" alt="" />
+						</div>
+						<div>
+							<span>{{item.title}}</span>
+							<a href="javascript:;">查看</a>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li><a href="javascript:;">第一页</a></li>
+					<li><a href="javascript:;"><</a></li>
+					<li><a href="javascript:;">1</a></li>
+					<li><a href="javascript:;">2</a></li>
+					<li><a href="javascript:;">></a></li>
+					<li><a href="javascript:;">最末页</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

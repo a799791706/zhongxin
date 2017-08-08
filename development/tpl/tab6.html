@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../sass/css/tab6.css" />
+	</head>
+	<body>
+		<div ng-controller="tab6" class="tab6">
+			<div>
+				<div>
+					<strong>借款申请</strong>
+					<p>众信金融诚邀您提供优质资产端借款需求信息，致力于为投资人提供安全稳健的金融理财产品</p>
+				</div>
+				<div>
+					<p><span>借款申请流程</span></p>
+					<ul>
+						<li>
+							<div>1</div>
+							<p>提交申请</p>
+						</li>
+						<li></li>
+						<li>
+							<div>2</div>
+							<p>资质审核</p>
+						</li>
+						<li></li>
+						<li>
+							<div>3</div>
+							<p>合同签订</p>
+						</li>
+						<li></li>
+						<li>
+							<div>4</div>
+							<p>产品上线</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!---->
+			<div>
+				<div>
+					<div>
+						<p><span>我们提供的服务</span></p>
+						<ul>
+							<li ng-repeat="item in fCf">
+								<img _src="{{item.image}}" alt="" />
+								<p>{{item.title}}</p>
+								<p>{{item.content}}</p>
+							</li>
+						</ul>
+					</div>
+					<!---->
+					<div>
+						<p><span>如果您或您了解的融资项目具有以下特点，欢迎您向我们提交申请：</span></p>
+						<ul>
+							<li ng-repeat="item in mLoan">{{item.title}}</li>
+						</ul>
+						<div>
+							<p><input type="checkbox" name="" id="" /><span>我确认融资项目具有以上特点</span></p>
+							<a href="javascript:;">登录立即申请</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

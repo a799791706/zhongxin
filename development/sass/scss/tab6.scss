@@ -1,0 +1,193 @@
+.uls{
+    >li:nth-child(5){
+        border-bottom:3px solid #E34A4A !important;
+        >a{
+            color:#E34A4A !important;
+        }
+    }
+}
+.div1{
+    display:none;
+}
+.tab6{
+    >div:nth-child(1){
+        height:430px;
+        background-image: url(../../images/banner_loan.jpg);
+        background-position: top center;
+        overflow:hidden;
+        >div:nth-child(1){
+            width: 722px;
+            height: 76px;
+            color: #fff;
+            text-align: center;
+            background-image: url(../../images/bg_loan_caption.png);
+            background-position: top center;
+            background-repeat:  no-repeat;
+            margin: 54px auto 0;
+            padding: 12px 0 20px;
+            >strong{
+                font-size: 36px;
+                font-weight: normal;
+                line-height: 48px;
+            }
+            >p{
+                font-size: 14px;
+                line-height: 24px;
+                margin-top: 4px;
+            }
+        }
+        >div:nth-child(2){
+            width:calc(980px - 40px);
+            height:calc(224px - 60px);
+            margin:0 auto;
+            margin-top:44px;
+            padding:30px 20px;
+            overflow:hidden;
+            background:rgba(99,87,87,0.5);
+            >p:nth-child(1){
+                background-image: url(../../images/dot5.png);
+                background-repeat: no-repeat;
+                background-position: center left;
+                padding-left:20px;
+                >span{
+                    font-size: 20px;
+                    color: #fff;
+                    line-height: 30px;
+                }
+            }
+            >ul:nth-child(2){
+                width:764px;
+                margin:32px auto 0;
+                >li{
+                    float:left;
+                }
+                >li:nth-child(odd){
+                    width:68px;
+                    height:100px;
+                    >div:nth-child(1){
+                        width:64px;
+                        height:64px;
+                        border:2px solid white;
+                        text-align:center;
+                        line-height:64px;
+                        font-size: 32px;
+                        color:#ffffff;
+                        border-radius: 50%;
+                    }
+                    >p:nth-child(2){
+                        font-size:16px;
+                        color:#ffffff;
+                        line-height:24px;
+                        text-align:center;
+                        margin-top:8px;
+                    }
+                }
+                >li:nth-child(even){
+                    width: 164px;
+                    height: 8px;
+                    background: #fff;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    >div:nth-child(2){
+        background-color: #fafafa;
+        overflow:hidden;
+        color:#333333;
+        >div{
+            width:calc(980px - 40px);
+            overflow:hidden;
+            margin:0 auto;
+            background: white;
+            padding: 20px;
+            >div:nth-child(1){
+                overflow:hidden;
+                padding:20px;
+                >p:nth-child(1){
+                    background-image: url(../../images/dot5.png);
+                    background-repeat: no-repeat;
+                    background-position: center left;
+                    padding-left:20px;
+                    >span{
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+                >ul:nth-child(2){
+                    width: 846px;
+                    margin: 30px auto;
+                    >li{
+                        width:180px;
+                        height:226px;
+                        color:#ea5c5c;
+                        border:1px solid #ea5c5c;
+                        float:left;
+                        margin: 0 30px;
+                        padding:20px;
+                        border-radius: 5px;
+                        text-align:center;
+                        >img:nth-child(1){
+                            margin-top:8px;
+                        }
+                        >p:nth-child(2){
+                            font-size:16px;
+                            line-height:24px;
+                            margin-top:16px;
+                        }
+                        >p:nth-child(3){
+                            line-height:20px;
+                            margin-top:16px;
+                        }
+                    }
+                }
+            }
+            >div:nth-child(2){
+                overflow:hidden;
+                padding:20px;
+                >p:nth-child(1){
+                    background-image: url(../../images/dot5.png);
+                    background-repeat: no-repeat;
+                    background-position: center left;
+                    padding-left:20px;
+                    >span{
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+                >ul:nth-child(2){
+                    overflow:hidden;
+                    font-size:14px;
+                    line-height:30px;
+                    margin:10px 0;
+                    padding-left:40px;
+                }
+                >div:nth-child(3){
+                    margin-top:20px;
+                    padding-left:60px;
+                    >p:nth-child(1){
+                        >input{
+                            margin-right:4px;
+                        }
+                    }
+                    >a:nth-child(2){
+                        margin-top:8px;
+                        width:258px;
+                        height:38px;
+                        display:block;
+                        text-align:center;
+                        line-height:38px;
+                        color:#ffffff;
+                        border:1px solid #E34A4A;
+                        background:#E34A4A;
+                        border-radius: 4px;
+                        transition:all .3s ease-in-out;
+                    }
+                    >a:nth-child(2):hover{
+                        background:#BE3030;
+                    }
+                }
+            }
+        }
+    }
+}

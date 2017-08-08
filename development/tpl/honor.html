@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../sass/css/honor.css" />
+	</head>
+	<body>
+		<!--荣誉资质-->
+		<div class="honor">
+			<div>
+				<!---->
+				<ul>
+					<li ng-repeat="item in honor">
+						<div></div>
+						<div></div>
+						<div>
+							<p><strong>{{item.time}}</strong><span>主办方:{{item.mvp}}</span></p>
+							<p>{{item.title}}</p>
+							<div><img _src="{{item.image}}" alt="" /></div>
+						</div>
+					</li>
+				</ul>
+				<!---->
+				<ul>
+					<li ng-repeat="item in honors"> 
+						<div></div>
+						<div></div>
+						<div>
+							<p><strong>{{item.time}}</strong><span>主办方:{{item.mvp}}</span></p>
+							<p>{{item.title}}</p>
+							<div><img _src="{{item.image}}" alt="" /></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

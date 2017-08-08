@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../sass/css/newsList.css" />
+	</head>
+	<body>
+		<!--媒体报道-->
+		<div class="newsList">
+			<div><strong>北京中技商业保理有限公司</strong></div>
+			<div>
+				<div>
+					<ul>
+						<li ng-repeat="item in newsList">
+							<p><a href="javascript:;">{{item.title}}</a><img _src="../images/icon_hot.png" alt="" /></p>
+							<p><span>{{item.time}}</span><span>来源:{{item.form}}</span></p>
+							<p>{{item.content}}</p>
+							<p><a href="javascript:;">[查看详情]</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="javascript:;">第一页</a></li>
+						<li><a href="javascript:;"><</a></li>
+						<li><a href="javascript:;">1</a></li>
+						<li><a href="javascript:;">2</a></li>
+						<li><a href="javascript:;">3</a></li>
+						<li><a href="javascript:;">4</a></li>
+						<li><a href="javascript:;">5</a></li>
+						<li><a href="javascript:;">></a></li>
+						<li><a href="javascript:;">最末页</a></li>
+					</ul>
+				</div>
+				<!---->
+				<ul>
+					<li>
+						<ul>
+							<li><strong>发布时间</strong></li>
+							<li ng-repeat="item in timer"><a href="javascript:;">{{item.time}}</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><strong>热门报道</strong></li>
+							<li ng-repeat="item in buer"><a href="javascript:;">{{item.content}}</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

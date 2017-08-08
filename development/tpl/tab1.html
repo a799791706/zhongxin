@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../sass/css/tab1.css" />
+		<script src="../js/libs/jquery.js"></script>
+		<script src="../js/libs/jquery.roundabout2.js"></script>
+		<script src="../js/tab1.js"></script>
+	</head>
+	<body>
+		<div ng-controller="tab1" class="tab1">
+			<!--轮播-->
+			<div class="swiper-container friter-one">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" ng-repeat="images in banner" style="background-image: url({{images.image}});">
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+			<!--信息-->
+			<div>
+				<div>
+					<img _src="../images/icon_announcement.png" alt="" />
+					<span>最新公告</span>
+					<ul>
+						<li ng-repeat="not in not">
+							<span><a href="javascript:;">{{not.content}}</a></span>
+							<span>{{date|date:'yyyy-MM-dd'}}</span>
+							<a href="javascript:;">{{not.notice}}</a>
+						</li>
+					</ul>
+				</div>
+				<!---->
+				<div>
+					<ul ng-repeat="stat in stat">
+						<li>
+							<span>{{stat.money}}</span>
+							<p>{{stat.title}}</p>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<div></div>
+								<div>
+									<p>{{stat.sketch}}</p>
+									<p>{{stat.describe}}</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div>
+						<a href="javascript:;">查看我们的环保之路 ></a>
+						<a href="javascript:;">
+							<img _src="../images/video.jpg" alt="" />
+							<div></div>
+							<div></div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--投资专区-->
+			<div>
+				<p>
+					<span>投资专区</span>
+					<span>—— 精选环保新能源产业</span>
+					<a href="javascript:;">查看更多 ></a>
+				</p>
+				<div class="featured-area">
+				    <ul id="tab">
+				        <li ng-repeat="invest in invest">
+				        	<div>
+				        		<div>
+				        		<p><span>{{invest.name}}</span><span class="{{now == invest.status ? 'green':'red'}}">{{invest.status}}</span></p>
+				        		<div>
+				        			<div><img _src="../images/icon_date.png" alt="" /><span>{{invest.day}}</span><span>天</span></div>
+				        			<div><img _src="../images/icon_date.png" alt="" /><span>{{invest.rate}}</span><span>%</span></div>
+				        		</div>
+				        		<p>{{invest.label}}</p>
+				        		<div>
+				        			<div><img _src="../images/icon_secured.png" src="../images/icon_secured.png" alt="" /><span>{{invest.admit}}</span></div>
+				        			<div><img _src="../images/icon_style.png" src="../images/icon_style.png" alt="" alt="" /><span>{{invest.three}}</span></div>
+				        		</div>
+					        	</div>
+					        	<div>
+					        		<div>
+					        			<span>{{invest.doing}}</span>
+					        			<div><img _src="../images/icon_time.png" src="../images/icon_time.png" alt="" /><span class="span" date="{{invest.date}}">{{invest.date}}</span></div>
+					        		</div>
+					        		<div>
+					        			<p>剩余<span>{{invest.money}}</span><span>元</span><span>{{invest.and}}</span><span></span></p>
+					        			<div>
+					        				<div>
+					        					<div></div>
+					        				</div>
+					        				<span>{{invest.ratio}}</span>
+					        			</div>
+					        		</div>
+					        		<div>
+					        			<a href="javascript:;void(0)">{{invest.starts}}</a>
+					        		</div>
+					        	</div>
+				        	</div>
+				        </li>
+				        <a href="javascript:;void(0)" id="previous"></a>
+						<a href="javascript:;void(0)" id="next"></a>
+				    </ul>
+				    
+			    </div>
+			</div>
+			<!--二级市场-->
+			<div>
+				<p>
+					<span>二级市场</span>
+					<span>—— 更灵活的债权市场</span>
+					<a href="javascript:;">查看更多 ></a>
+				</p>
+				<ul>
+					<li ng-repeat="bazs in baz">
+						<div>
+							<a href="javascript:;">{{bazs.name}}</a>
+							<p><span>原标年化收益</span><span>{{bazs.rate}}</span></p>
+						</div>
+						<div><span>剩余</span><span>{{bazs.data}}</span><span>天</span></div>
+						<div><span>{{bazs.rate}}</span><span>%</span></div>
+						<div>
+							<div><span>{{bazs.number}}</span><span>份转让中</span></div>
+							<p><span>全部标价共</span><span>{{bazs.number}}</span><span>份</span></p>
+						</div>
+						<a href="javascript:;">立即购买</a>
+					</li>
+				</ul>
+			</div>
+			<!--发现-->
+			<div>
+				<p>
+					<span>发现</span>
+					<span>—— 众信还有更多功能等待您的发现</span>
+				</p>
+				<div>
+					<div ng-repeat="finds in find">
+						<a href="javascript:;">
+							<img _src="{{finds.image}}" alt="" />
+							<div></div>
+							<div><a href="javascript:;">{{finds.title}}</a></div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--合作伙伴 -->
+			<div>
+				<div>
+					<p>
+						<span>合作伙伴</span>
+						<span>—— 携手众信，普惠中国</span>
+					</p>
+					<div>
+						<div ng-repeat="fid in friends">
+							<a href="javascript:;void(0)"><img _src="{{fid.image}}" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--媒体报道-->
+			<div>
+				<div>
+					<p>
+					<span>媒体报道</span>
+					<span>—— 媒体中的我们，邀请您一起见证众信的成长</span>
+					</p>
+					<div>
+						<span>最新动态</span>
+						<ul>
+							<li ng-repeat="meis in medias">
+								<span><a href="javascript:;">{{meis.title}}</a></span>
+								<span>{{date|date:'yyyy-MM-dd'}}</span>
+								<a href="javascript:;">{{meis.notice}}</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<div ng-repeat="spon in sponsor">
+							<a href="javascript:;"><img _src="{{spon.image}}" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+		</div>
+	</body>
+</html>

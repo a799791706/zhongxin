@@ -1,0 +1,383 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  font-size: 14px; }
+
+body {
+  font: 12px/1.5,\5b8b\4f53;
+  font-family: "Microsoft YaHei";
+  position: relative;
+  max-height: 1000vh;
+  font-size: 1em; }
+
+header {
+  border: 1px solid #E2E2E2; }
+  header > div {
+    width: 980px;
+    height: 42px;
+    margin: 0 auto;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between; }
+    header > div > div:nth-child(1) {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: 12px; }
+      header > div > div:nth-child(1) > span {
+        display: block;
+        overflow: hidden; }
+      header > div > div:nth-child(1) > span:nth-child(2) {
+        margin: 0 30px 0 20px;
+        display: flex;
+        align-items: center;
+        font-size: 14px; }
+        header > div > div:nth-child(1) > span:nth-child(2) > img {
+          margin-right: 7px; }
+      header > div > div:nth-child(1) > span:nth-child(3) {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 1px solid #E8E8E8;
+        background-image: url(../../images/icon_follow.png);
+        transition: background 0.3s linear 0s; }
+        header > div > div:nth-child(1) > span:nth-child(3) > a {
+          display: block;
+          width: 26px;
+          height: 26px; }
+      header > div > div:nth-child(1) > span:nth-child(3):hover {
+        background-position: 0px 28px; }
+      header > div > div:nth-child(1) > span:nth-child(4) {
+        display: block;
+        margin-left: 10px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 1px solid #E8E8E8;
+        background-image: url(../../images/icon_follow.png);
+        background-position: 28px 0px;
+        transition: background 0.3s linear 0s; }
+        header > div > div:nth-child(1) > span:nth-child(4) > a {
+          display: block;
+          width: 26px;
+          height: 26px; }
+      header > div > div:nth-child(1) > span:nth-child(4):hover {
+        background-position: 28px 28px; }
+      header > div > div:nth-child(1) > div:nth-child(5) {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 190px;
+        width: 154px;
+        height: 176px;
+        background: white;
+        z-index: 100;
+        text-align: center;
+        border: 1px solid #C9C9C9;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px #C9C9C9; }
+        header > div > div:nth-child(1) > div:nth-child(5) > div:nth-child(1) {
+          position: absolute;
+          left: 67px;
+          top: -4px;
+          width: 20px;
+          height: 20px;
+          background: white;
+          transform: rotate(45deg);
+          border: 1px solid #C9C9C9; }
+        header > div > div:nth-child(1) > div:nth-child(5) > div:nth-child(2) {
+          height: 22px;
+          width: 100%;
+          background: white;
+          position: absolute;
+          top: 0; }
+        header > div > div:nth-child(1) > div:nth-child(5) > img:nth-child(3) {
+          margin: 24px 0 6px 0; }
+        header > div > div:nth-child(1) > div:nth-child(5) > p:nth-child(4) {
+          font-size: 12px;
+          color: #666666; }
+    header > div > div:nth-child(2) {
+      position: relative;
+      display: flex;
+      align-items: center; }
+      header > div > div:nth-child(2) > span:nth-child(1),
+      header > div > div:nth-child(2) > span:nth-child(2) {
+        display: block;
+        padding: 0 6px;
+        height: 14px;
+        border-left: 1px solid #6CB2EB;
+        border-right: 1px solid #EBB26C;
+        line-height: 14px; }
+        header > div > div:nth-child(2) > span:nth-child(1) > a,
+        header > div > div:nth-child(2) > span:nth-child(2) > a {
+          color: #333333;
+          transition: color 0.3s linear 0s; }
+        header > div > div:nth-child(2) > span:nth-child(1) > a:hover,
+        header > div > div:nth-child(2) > span:nth-child(2) > a:hover {
+          color: #E55757; }
+      header > div > div:nth-child(2) > span:nth-child(1) {
+        border-left: none; }
+      header > div > div:nth-child(2) > span:nth-child(3) {
+        display: block;
+        border-left: 1px solid #6CB2EB;
+        padding: 0 6px;
+        height: 14px;
+        line-height: 14px; }
+        header > div > div:nth-child(2) > span:nth-child(3) > a {
+          color: #E55757; }
+      header > div > div:nth-child(2) > div:nth-child(4) {
+        display: none;
+        position: absolute;
+        top: 38px;
+        left: -50px;
+        width: 152px;
+        height: 175px;
+        background: white;
+        z-index: 100;
+        text-align: center;
+        border: 1px solid #C9C9C9;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px #C9C9C9; }
+        header > div > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) {
+          position: absolute;
+          left: 67px;
+          top: -4px;
+          width: 20px;
+          height: 20px;
+          background: white;
+          transform: rotate(45deg);
+          border: 1px solid #C9C9C9; }
+        header > div > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) {
+          height: 22px;
+          width: 100%;
+          background: white;
+          position: absolute;
+          top: 0; }
+        header > div > div:nth-child(2) > div:nth-child(4) > img:nth-child(3) {
+          margin: 24px 0 6px 0; }
+        header > div > div:nth-child(2) > div:nth-child(4) > p:nth-child(4) {
+          font-size: 12px;
+          color: #666666; }
+
+footer {
+  width: 100%;
+  height: 405px;
+  position: absolute;
+  background: #403D3D; }
+  footer > div {
+    width: 980px;
+    margin: 0 auto;
+    color: #CCCCCC; }
+  footer > div:nth-child(1) {
+    height: 92px;
+    margin: 28px auto;
+    display: flex; }
+    footer > div:nth-child(1) > label:nth-child(1) {
+      color: white;
+      width: 112px;
+      overflow: hidden;
+      display: block;
+      font-weight: bold; }
+    footer > div:nth-child(1) > ul:nth-child(2) > li {
+      float: left;
+      margin: 0 0 18px 16px; }
+      footer > div:nth-child(1) > ul:nth-child(2) > li > a {
+        color: #999999; }
+    footer > div:nth-child(1) > ul:nth-child(2) > li:hover > a {
+      color: white; }
+  footer > div:nth-child(2) {
+    height: 110px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between; }
+    footer > div:nth-child(2) > div:nth-child(1) {
+      padding-right: 10px; }
+      footer > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
+        font-size: 16px;
+        margin-bottom: 24px; }
+        footer > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1) {
+          margin-right: 32px; }
+      footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        display: flex; }
+        footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+          display: flex;
+          align-items: center; }
+          footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(2) {
+            font-size: 30px; }
+        footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+          display: flex;
+          margin-top: 6px; }
+          footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+            margin-left: 10px; }
+          footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            margin-right: 48px; }
+            footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div > img:nth-child(1) {
+              margin-right: 6px; }
+            footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div > span:nth-child(2) {
+              display: block;
+              white-space: nowrap; }
+        footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+          display: flex;
+          margin-top: 4px;
+          position: relative; }
+          footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a {
+            color: #999999;
+            display: block;
+            float: left;
+            width: 62px;
+            height: 62px; }
+            footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a > div:nth-child(1) {
+              margin: auto; }
+            footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a > p:nth-child(2) {
+              text-align: center;
+              font-size: 12px; }
+          footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a:nth-child(1) {
+            margin-right: 26px; }
+            footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a:nth-child(1) > div {
+              width: 44px;
+              height: 44px;
+              border-radius: 50%;
+              background: #4A4949;
+              background-image: url(../../images/icon_follow2.png);
+              background-position: 2px 2px;
+              transition: background 0.3s linear 0s; }
+          footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a:nth-child(1):hover > div {
+            background-position: 2px 45px; }
+          footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a:nth-child(2) > div {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #4A4949;
+            background-image: url(../../images/icon_follow2.png);
+            background-position: -41px 2px;
+            transition: background 0.3s linear 0s; }
+          footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a:nth-child(2):hover > div {
+            background-position: -41px 44px; }
+          footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+            display: none;
+            position: absolute;
+            top: -190px;
+            left: 37px;
+            width: 154px;
+            height: 176px;
+            background: white;
+            z-index: 100;
+            text-align: center;
+            border: 1px solid #C9C9C9;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px #C9C9C9; }
+            footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) {
+              position: absolute;
+              left: 70px;
+              bottom: -7px;
+              width: 16px;
+              height: 16px;
+              background: white;
+              transform: rotate(45deg);
+              border: 1px solid #C9C9C9; }
+            footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+              height: 16px;
+              width: 100%;
+              background: white;
+              position: absolute;
+              bottom: 0; }
+            footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > img:nth-child(3) {
+              margin: 24px 0 -2px 0; }
+            footer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > p:nth-child(4) {
+              font-size: 12px;
+              color: #666666; }
+    footer > div:nth-child(2) > div:nth-child(2) {
+      text-align: right; }
+      footer > div:nth-child(2) > div:nth-child(2) > ul > li {
+        font-size: 12px;
+        margin-bottom: 14px; }
+      footer > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(1) {
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-end; }
+        footer > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(1) > a {
+          color: white;
+          padding: 0 5px;
+          border-right: 1px solid #5F8199;
+          border-left: 1px solid #8D724D; }
+        footer > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(1) > a:nth-child(1) {
+          border-left: none; }
+  footer > div:nth-child(3) > ul {
+    display: flex;
+    justify-content: center; }
+    footer > div:nth-child(3) > ul > li {
+      margin-right: 20px; }
+    footer > div:nth-child(3) > ul > li:nth-child(1) {
+      width: 114px;
+      height: 41px;
+      background-image: url(../../images/xin_01.png); }
+    footer > div:nth-child(3) > ul > li:nth-child(2) {
+      width: 41px;
+      height: 41px;
+      background-image: url(../../images/xin_02.png); }
+    footer > div:nth-child(3) > ul > li:nth-child(3) {
+      width: 108px;
+      height: 41px;
+      background-image: url(../../images/xin_03.png); }
+    footer > div:nth-child(3) > ul > li:nth-child(4) {
+      width: 111px;
+      height: 41px;
+      background-image: url(../../images/xin_05.png); }
+    footer > div:nth-child(3) > ul > li:nth-child(5) {
+      width: 134px;
+      height: 39px;
+      background-image: url(../../images/xin_06.png); }
+    footer > div:nth-child(3) > ul > li:hover {
+      background-position: 0px 41px; }
+  footer > p:nth-child(4) {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 12px; }
+
+.fh {
+  width: 54px;
+  position: fixed;
+  overflow: hidden;
+  top: 30%;
+  right: 0;
+  z-index: 100;
+  margin-top: -106px; }
+  .fh > li > a {
+    display: block;
+    width: 28px;
+    height: 36px;
+    font-size: 14px;
+    color: #ffffff;
+    text-indent: -9999em;
+    text-align: center;
+    line-height: 18px;
+    border: 1px solid #c5c5c5;
+    background-color: #fff;
+    padding: 8px 12px;
+    background-image: url(../../images/icon_backpanel.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: background .3s ease-in-out; }
+  .fh > li a:hover {
+    background-image: none;
+    border: 1px solid #e55656;
+    background-color: #e55656;
+    text-indent: 0em; }
+  .fh > li:nth-child(2) > a {
+    background-position: 0 -50px; }
+  .fh > li:nth-child(3) > a {
+    background-position: 0 -104px; }
+  .fh > li:nth-child(4) > a {
+    background-position: 0 -156px; }
+  .fh #lia {
+    display: none; }
+
+/*# sourceMappingURL=start.css.map */
